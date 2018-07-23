@@ -1,0 +1,19 @@
+/*
+Theme Name:   Vortex Theme
+Theme URI:    https://github.com/AlbertoAlfredo/vortex-theme
+Description:  Tema criado criado para o site http://vortexcaoscast.coletivando.org/ a partir do tema Twenty Fourteen
+Author:       Alberto Alfredo
+Author URI:   https://albertoalfredo.github.io/
+Template:     twentyfourteen
+Version:      0.0.1
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  vortex-theme
+*/
+
+@media (max-width: 1008px){
+    #featured-content{
+        display: none;
+    }
+}
