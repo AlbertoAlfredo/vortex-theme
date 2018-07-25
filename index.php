@@ -1,62 +1,84 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme and one
- * of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query,
- * e.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php get_template_part('template-parts/head'); ?>
 
-<div id="main-content" class="main-content">
+<?php get_template_part('template-parts/nav','header'); ?>
 
-<?php
-if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
-	// Include the featured content template.
-	get_template_part( 'featured-content' );
-}
-?>
+<div class="container-fluid dmbs-content-wrapper">
+    <div class="row">
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+        <?php get_template_part( 'template-parts/sidebar', 'left' ); ?>
 
-		<?php
-		if ( have_posts() ) :
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
+        <?php $dmbsColumnSize = devdmbootstrap_column_size('main'); ?>
+        <div class="col-md-<?php echo sanitize_html_class( $dmbsColumnSize, '8' ); ?> dmbs-main">
 
-				/*
-				 * Include the post format-specific template for the content. If you want to
-				 * use this in a child theme, then include a file called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
+            <?php get_template_part( 'template-parts/search' ); ?>
 
-				endwhile;
-			// Previous/next post navigation.
-			twentyfourteen_paging_nav();
+            <?php if ( have_posts() ) : ?>
 
-			else :
-				// If no content, include the "No posts found" template.
-				get_template_part( 'content', 'none' );
+                <?php
+                // Start the loop.
+                while ( have_posts() ) : the_post(); ?>
 
-			endif;
-		?>
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('dmbs-post card'); ?>>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
-</div><!-- #main-content -->
+                        <header class="card-header dmbs-post-header">
+                            <?php the_title( sprintf( '<h2 class="dmbs-post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                            <?php get_template_part('template-parts/postmeta','header'); ?>
+                        </header>
 
-<?php
-get_sidebar();
-get_footer();
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <div class="dmbs-post-featured-image">
+                                <?php the_post_thumbnail('featured', array('class' => 'card-img-top')); ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <div class="card-body dmbs-post-content">
+
+                            <?php if ( has_excerpt() ) : ?>
+                                <div class="dmbs-post-summary">
+                                    <?php the_excerpt(); ?>
+                                </div><!-- .entry-summary -->
+                            <?php endif; ?>
+
+                            <?php
+                                /* translators: %s: Name of current post */
+                                the_content( sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'devdmbootstrap4' ),
+                                    get_the_title()
+                                ) );
+
+                                wp_link_pages();
+                            ?>
+
+                        </div>
+
+                        <footer class="card-footer dmbs-post-footer">
+                            <?php get_template_part('template-parts/postmeta','footer'); ?>
+                        </footer>
+
+                    </article>
+
+                <?php
+                // End the loop.
+                endwhile;
+
+                // Previous/next page navigation.
+                the_posts_pagination( array(
+                    'prev_text'          => '<span class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-o-left"></i> ' . __( 'Previous page', 'devdmbootstrap4' ) . '</span>',
+                    'next_text'          => '<span class="btn btn-primary btn-sm">' .__( 'Next page', 'devdmbootstrap4' ) . ' <i class="fa fa-arrow-circle-o-right"></i></span>',
+                    'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'devdmbootstrap4' ) . ' </span>',
+                ) );
+
+                ?>
+
+            <?php endif; ?>
+        </div>
+
+        <?php get_template_part( 'template-parts/sidebar', 'right' ); ?>
+
+    </div>
+</div>
+
+<?php get_template_part('template-parts/nav','footer'); ?>
+
+<?php get_footer(); ?>

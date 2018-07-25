@@ -1,19 +1,59 @@
 /*
-Theme Name:   Vortex Theme
-Theme URI:    https://github.com/AlbertoAlfredo/vortex-theme
-Description:  Tema criado criado para o site http://vortexcaoscast.coletivando.org/ a partir do tema Twenty Fourteen
-Author:       Alberto Alfredo
-Author URI:   https://albertoalfredo.github.io/
-Template:     twentyfourteen
-Version:      0.0.1
-License:      GNU General Public License v2 or later
-License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Theme Name: Vortex Theme
+Theme URI: https://github.com/AlbertoAlfredo/vortex-theme
+Author: Alberto Alfredo
+Author URI: https://albertoalfredo.github.io/
+Description: Tema criado criado para o site http://vortexcaoscast.coletivando.org/ a partir do tema devdmbootstrap4
+Version: 0.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  vortex-theme
+Template: devdmbootstrap4
 */
 
-@media (max-width: 1008px){
-    #featured-content{
-        display: none;
-    }
+/* stylelint-disable selector-list-comma-newline-after */
+
+@font-face {
+    font-family: "mailstamp";
+    src: url("MailartRubberstamp-Regular.otf");
+}
+
+@font-face {
+    font-family: "rockwell";
+    src: url("rockwell.otf");
+}
+
+a, a:link, a:visited {
+    color: rgb(11, 148, 57);
+    text-decoration: none;
+}
+.link-roxinho{
+    color: #7228f3;
+    text-decoration: none;
+}
+.text-roxinho{
+    color: #7124f4;
+}
+
+.blog-header-logo {
+    font-family:  "mailstamp", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "mailstamp", Georgia, "Times New Roman", serif;
+}
+p {
+    font-family: "rockwell", Georgia, 'Times New Roman', Times, serif;
+}
+.display-4 {
+    font-size: 2.5rem;
+}
+.texto-g, h1, .dmbs-header .dmbs-header-right h1.dmbs-header-title, .dmbs-header .dmbs-header-right h2.dmbs-header-title {
+    font-size: 5rem;
 }
