@@ -33,6 +33,15 @@
                             )
                     );
                     ?>
+                    <form role="search" method="get" class="search-form form" action="<?php get_bloginfo( 'url' ) ?>">
+                        <div class="input-group">
+                            <span class="sr-only">Search for</span>
+                            <input type="search" class="search-field form-control" placeholder="Search ..." value="" name="s" title="Search for:">
+                            <span class="input-group-btn">
+                            <button class="btn btn-primary search-submit" type="submit" value="Search"><span class="fa fa-search"></span></button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
 
             </nav>

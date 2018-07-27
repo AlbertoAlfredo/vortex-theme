@@ -1,0 +1,270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: devdmbootstrap4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-29 17:24+0000\n"
+"PO-Revision-Date: 2018-03-29 17:26+0000\n"
+"Last-Translator: dannym <danny@devdm.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/comments.php:13
+#:  
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/postmeta-header.php:11
+msgid " Commentários"
+msgstr ""
+
+#. %1$1s: Total Results, %2$2s The Search Query
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/search.php:9
+#, php-format
+msgid "%1$1s Resultatos para \"%2$2s\""
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/404.php:18
+msgid "404 Página não encontrada"
+msgstr ""
+
+#. Description of the theme
+msgid "Um tema feito para o Vortex Caoscast, feito por um fã."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:16
+msgid "Arquivos"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/comments.php:13
+#:  
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/postmeta-header.php:11
+msgid "Comentário"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/comments.php:13
+#:  
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/postmeta-header.php:11
+msgid "Comentários"
+msgstr ""
+
+#. %s: Name of current post
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/archive.php:65 
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/single.php:44 
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:46
+#, php-format
+msgid "Continue Lendo<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#. %s: Name of post category
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/category.php:4
+#, php-format
+msgid "
+Atualmente visualizando mensagens em%s"
+msgstr ""
+
+#. %s: tag
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/tag.php:4
+#, php-format
+msgid "Atualmente exibindo postagens marcadas%s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:21
+msgid "Personalize as opções de tema específicas do Vortex-Theme."
+msgstr ""
+
+#. %s: The Day
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:5
+#, php-format
+msgid "Arquivos Diários %s"
+msgstr ""
+
+#. Author of the theme
+msgid "Alberto Alfredo"
+msgstr ""
+
+#. Name of the theme
+msgid "Vortex Theme"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/footer.php:6
+msgid "Vortes Theme criado por ALberto Alfredo"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:18
+msgid "Opções do tema"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/bootstrap-comment-walker.php:42
+msgid "Editar"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:22
+msgid "Email"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:141
+msgid ""
+"Ative o hover para navegadores de desktop e classes de ícones para itens de menu usando o"
+"campo de descrição meta do item de menu. Consulte a documentação do website do tema para"
+"Detalhes completos."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:120
+msgid "Enqueue Font Awesome Icon Set (v5.0.2)."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:63
+msgid "Footer Menu"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:65 
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:94
+msgid "Esconder"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://devdm.com/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://devdmbootstrap.com"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:133
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:88
+msgid "Left Sidebar Size"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:117
+msgid "Load the Font Awesome Free Icon Library?"
+msgstr ""
+
+#. %s: Admin URL to profile, Display Name, Logout
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:57
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" class=\"btn btn-sm "
+"btn-danger\" title=\"Log out of this account\"><span class=\"fa fa-sign-"
+"out\"></span> Log out?</a>"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:62
+msgid "Main Menu"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/nav-footer.php:9
+#:  
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/nav-header.php:10
+msgid "Menu"
+msgstr ""
+
+#. %s: The month
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:9
+#, php-format
+msgid "Monthly Archives %s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:9
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:18
+msgid "Name"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:68
+msgid "Next page"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:49
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:69
+msgid "Page"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/index.php:67
+msgid "Previous page"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:122
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:59
+msgid "Right Sidebar Size"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/searchform.php:6
+msgid "Search"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/searchform.php:4
+msgid "Search ..."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:162
+msgid "Show Created By in the Footer."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:159
+msgid "Show Danny some love in the footer?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:38
+msgid "Show the Header?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:91
+msgid "The col-md-* size of the left sidebar."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:62
+msgid "The col-md-* size of the right sidebar."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:41
+msgid ""
+"Toggle showing the header content area containing the logo, title and "
+"tagline."
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/customizer.php:138
+msgid "Use the Enhanced menu system?"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/utilities.php:29
+msgid "Website"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:124 
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/functions.php:135
+msgid "Widgets in this area will be shown on all posts and pages."
+msgstr ""
+
+#. %s: The year
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:13
+#, php-format
+msgid "Yearly Archives %s"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/template-parts/archive-types/date.php:13
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../../../../../../4x/theme/repos/devdmbootstrap4/includes/bootstrap-comment-walker.php:32
+msgid "Your comment is awaiting moderation."
+msgstr ""

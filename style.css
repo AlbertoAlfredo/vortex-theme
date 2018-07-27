@@ -23,15 +23,19 @@ Template: devdmbootstrap4
     font-family: "rockwell";
     src: url("rockwell.otf");
 }
-
-a, a:link, a:visited {
+a, a:link {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(11, 148, 57);
+    text-decoration: underline;
+}
+a:visited {
     color: rgb(11, 148, 57);
     text-decoration: none;
 }
-.link-roxinho{
-    color: #7228f3;
-    text-decoration: none;
-}
+
 .text-roxinho{
     color: #7124f4;
 }
@@ -48,6 +52,9 @@ a, a:link, a:visited {
 h1, h2, h3, h4, h5, h6 {
     font-family: "mailstamp", Georgia, "Times New Roman", serif;
 }
+h2, h3, h4, h5, h6{
+    color: #7124f4;
+}
 p {
     font-family: "rockwell", Georgia, 'Times New Roman', Times, serif;
 }
@@ -56,4 +63,26 @@ p {
 }
 .texto-g, h1, .dmbs-header .dmbs-header-right h1.dmbs-header-title, .dmbs-header .dmbs-header-right h2.dmbs-header-title {
     font-size: 5rem;
+}
+.search-submit, .search-submit:hover, .btn-primary{
+    background-color: black;
+    border-color: black;
+}
+.link-roxinho, .link-roxinho:hover {
+    color: #7228f3;
+    text-decoration: none;
+}
+article {
+    background-color: #fff;
+    border-radius: 5px;
+}
+.more-link {
+    font-family: "mailstamp", Georgia, "Times New Roman", serif;
+    font-size: 1.5em;
+
+}
+@media (min-width: 800px) {
+    .widget_powerpress_subscribe {
+        display: none;
+    }
 }

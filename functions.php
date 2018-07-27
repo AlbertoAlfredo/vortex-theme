@@ -11,4 +11,12 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
+function wpgood_nav_search($items, $args) {
+    // verifica se é o menu "primary"
+    if( !($args->theme_location == 'primary') ) 
+    return $items;
+    // se for, adiciona o campo de epsquisa
+    return $items . '<li>' . get_search_form(false) . '</li>';
+}
+add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);
 ?>
