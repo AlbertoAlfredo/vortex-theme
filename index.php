@@ -4,7 +4,7 @@
 
 <?php get_template_part('template-parts/nav','header'); ?>
 
-<div class="container-fluid dmbs-content-wrapper">
+<div class="container dmbs-content-wrapper">
     <div class="row">
 
         <?php get_template_part( 'template-parts/sidebar', 'left' ); ?>

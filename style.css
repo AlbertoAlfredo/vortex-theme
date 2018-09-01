@@ -23,6 +23,18 @@ Template: devdmbootstrap4
     font-family: "rockwell";
     src: url("rockwell.otf");
 }
+
+.cabecalho-img{
+    margin: 0px;
+    max-width: 100%;
+    max-height: 20vw;
+}
+.dmbs-header{
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    background-color: black;
+}
 a, a:link {
     color: rgb(59, 59, 59);
     text-decoration: none;

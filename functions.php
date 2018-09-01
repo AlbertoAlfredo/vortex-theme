@@ -19,4 +19,31 @@ function wpgood_nav_search($items, $args) {
     return $items . '<li>' . get_search_form(false) . '</li>';
 }
 add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);
+// Add support for featured content.
+/* 
+add_theme_support(
+    'featured-content', array(
+        'featured_content_filter' => 'get_featured_posts',
+        'max_posts'               => 3,
+    )
+);
+*/
+// Load up the Text domain.
+load_theme_textdomain('devdmbootstrap4', get_template_directory() . '/languages');
+
+$defaults = array(
+	'default-image'          => '',
+	'width'                  => 1500,
+	'height'                 => 200,
+	'flex-height'            => true,
+	'flex-width'             => true,
+	'uploads'                => true,
+	'random-default'         => false,
+	'header-text'            => true,
+	'default-text-color'     => '',
+	'wp-head-callback'       => '',
+	'admin-head-callback'    => '',
+	'admin-preview-callback' => '',
+);
+add_theme_support( 'custom-header', $defaults );
 ?>
